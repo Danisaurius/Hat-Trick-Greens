@@ -52,7 +52,7 @@
 
 .about-us-container {
     display: flex;
-    margin: 30px auto 0 auto;
+    margin: 700px auto 0 auto;
     width: 70%;
     min-width: 320px;
     height: 330px;
@@ -60,16 +60,40 @@
 }
 
 .about-us-image-container {
+    display: flex;
     width: 45%;
     border: 1px solid orange;
+    justify-content: center;
 }
 
 .about-us-image {
     width: 100%;
-    max-width: 780px;
+    max-width: 320px;
     max-height: 100%;
     object-fit: cover;
     margin: auto;
     transform: rotate(7deg);
     border-radius: 14px;
+
+    opacity: 0;
+    position: relative;
+
+    transform: translateX(-100%);
+    transition: none; /* ensures it doesn’t animate on load */
+}
+
+.about-us-image.visible {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    transform: rotate(7deg);
+    opacity: 1;
+  }
 }
