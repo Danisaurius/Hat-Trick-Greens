@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    margin: auto;
+    width: 70%;
+    height: 180px;
+    border: 1px solid red;
+}
+
+.logo-container {
+    width: 50%;
+    height: 100%;
+    border: 1px solid orange;
+}
