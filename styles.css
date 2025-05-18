@@ -198,25 +198,49 @@ h2 {
     background-color: transparent;
 }
 
+#divider3 {
+    transform: translateY(20px);
+}
+
 .about-us-container {
     display: flex;
     margin: 40px auto 0 auto;
-    width: 70%;
+    width: 60%;
     min-width: 320px;
-    height: 380px;
+    height: auto;
     /* border: 1px solid red; */
 }
 
 .about-us-image-container {
     display: flex;
-    width: 47%;
+    position: relative;
+    width: 60%;
     /* border: 1px solid orange; */
     justify-content: center;
 }
 
+.about-us-image-container p {
+    position: absolute;
+    background-color: transparent;
+    top: 35%;
+    font-family: 'montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    text-shadow: 0 2px 10px #3c5034, 0 3px 10px #3c5034;
+    opacity: 0;
+    
+}
+
+.about-us-image-container p.visible {
+    animation: FadeInViewer 1s ease-out 0.9s forwards;
+    
+}
+
 .about-us-image {
     width: 100%;
-    max-width: 400px;
+    max-width: 280px;
+    min-width: 210px;
     max-height: 100%;
     object-fit: cover;
     margin: auto;
@@ -235,6 +259,20 @@ h2 {
   animation-delay: 0.3s;
 }
 
+.about-us-image-container2 {
+    width: 40%;
+    /* border: 1px solid blue; */
+    margin: 50px 50px 30px 80px;
+    font-family: 'montserrat', sans-serif;
+    color: #3c5034;
+    text-align: justify;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+
+
+
 @keyframes slideInLeft {
   from {
     transform: translateX(-100%);
@@ -247,11 +285,26 @@ h2 {
   }
 }
 
+@keyframes FadeInViewer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes FadeIn {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about-us-container {
+    flex-direction: column;
   }
 }

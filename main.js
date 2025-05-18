@@ -14,7 +14,14 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-const image = document.querySelector('.about-us-image');
-if (image) {
-  observer.observe(image);
-}
+const elementsToObserve = document.querySelectorAll('.about-us-image, .about-us-image-container p');
+
+elementsToObserve.forEach(el => {
+  observer.observe(el);
+});
+
+
+// const image = document.querySelector('.about-us-image', '.about-us-image-container p');
+// if (image) {
+//   observer.observe(image);
+// }
