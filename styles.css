@@ -4,6 +4,8 @@
 
 body {
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -134,11 +136,11 @@ body {
 
 .about-paragraph-container {
   position: relative;
-  width: 200vw;
-  margin: auto;  
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100vw;
+  margin: 0;  
+  
   background-color: #3c5034;
+  padding: 0 0 0 0;
   /* border: 1px solid red; */
 }
 
@@ -157,7 +159,7 @@ h2 {
 
 .about-us-paragraph {
     position: relative;
-    width: 27%;
+    width: 48%;
     margin: -10px auto 0 auto;
     font-size: 1.1rem;
     font-family: 'montserrat', sans-serif;
