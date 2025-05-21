@@ -14,7 +14,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-const elementsToObserve = document.querySelectorAll('.about-us-image, .about-us-image-container p');
+const elementsToObserve = document.querySelectorAll('.about-us-image, .about-us-image-container p, .about-our-food-image');
 
 elementsToObserve.forEach(el => {
   observer.observe(el);
