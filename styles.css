@@ -416,6 +416,7 @@ h2 {
     text-align: justify;
     align-items: center;
     font-size: 1.1rem;
+    background-color: transparent;
   }
 
 .about-our-food-image {
@@ -567,7 +568,7 @@ h2 {
 }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1270px) {
 .navbar  {
   width: 125%;
   height: 30%;
