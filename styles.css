@@ -1,6 +1,7 @@
 html {
-  scroll-behavior: smooth;
+scroll-behavior: smooth;
 }
+
 
 * {
     background-color: #f5fedf;
@@ -11,6 +12,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: transparent;
+  
 }
 
 .background-ornaments {
@@ -76,7 +78,7 @@ body {
 }
 
 .navbar {
-    Display: flex;
+    display: flex;
     position: relative;
     margin:auto;
     width: 80%;
@@ -384,14 +386,54 @@ h2 {
     padding: 0 20px;
     font-family: 'montserrat', sans-serif;
     color: #3c5034;
+    background-color: transparent;
     text-align: justify;
     align-items: center;
     font-size: 1.1rem;
+    display: flex;
+    position: relative;
 }
 
-#divider4 {
-    transform: rotate(180deg) translateY(-40px)
+.about-us-image-container2 p{
+  background-color: transparent;
     
+}
+
+.about-us-image-container2 img{
+  opacity: 0.9;
+    
+}
+
+
+#Ornament3-1{
+  position: absolute;
+  width: 15%;
+  background-color: transparent;
+  right: -40%;
+  bottom: 57%;
+  transform: rotate(100deg);
+}
+
+#Ornament3-2{
+  position: absolute;
+  width: 11%;
+  background-color: transparent;
+  right: -18%;
+  bottom: 12%;
+  transform: rotate(-200deg);
+}
+
+
+#divider4 {
+    transform: translateY(20px) rotate(180deg);
+}
+
+.section-about-us {
+  margin-top: 100px;
+}
+
+.section-about-us h2 {
+  font-size: 2rem;
 }
 
 .about-the-food-container {
@@ -439,14 +481,63 @@ h2 {
 }
 
 #divider5 {
-    transform: translateY(110px)
-    
+  background-color: transparent;
+  width: 100%;
+  transform: translateY(90px);
+  height: auto;
 }
 
-.third-section {
-  transform: translate(0, 110px);
+.menu{
+  margin-top: 100px;
+  transform: translateY(70px);
+  position: relative;
 }
 
+.menu h2{
+  background-color: transparent;
+  transform: translateY(-40px)
+}
+
+.menu-button {
+  position: absolute;
+  background-color: transparent;
+  right: 20%;
+  width: 60%;
+}
+
+.menu-button:hover {
+  transform: translateY(-7px);
+}
+.menu-button {
+  transition: transform 0.3s ease;
+}
+
+.menu-button-background {
+  position: absolute;
+
+  background-color: transparent;
+  z-index: -1;
+
+  right: 22%;
+  width: 60%;
+  animation: menu-background 8s infinite linear;
+  animation-delay: 0.3s;
+}
+
+@keyframes menu-background {
+    0% {
+    transform: rotate(-6deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(6deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-6deg);
+    opacity: 1;
+  }
+}
 
 @media (max-width: 1150px) {
   #background-ornament-1 {
@@ -529,18 +620,17 @@ h2 {
 }
 
 @media (max-width: 1100px) {
+    #Ornament3-2 {
+  right: auto;
+  left: -20%;
+    }
+}
+
+@media (max-width: 1100px) {
     .about-the-food-text-container {
     font-size: 1rem;   
     width: 80%;
 }
-}
-
-
-@media (max-width: 1100px) {
-    #divider4 {
-    transform: rotate(180deg) translateY(110px);
-
-  }
 }
 
 @media (max-width: 1100px) {
@@ -611,3 +701,18 @@ h2 {
     animation: none;
   }
 }
+
+
+@media (max-width: 1200px) {
+  .third-section{
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .third-section{
+    margin-top: 0;
+  }
+}
+
+
