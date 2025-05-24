@@ -501,8 +501,8 @@ h2 {
 .menu-button {
   position: absolute;
   background-color: transparent;
-  right: 20%;
-  width: 60%;
+  right: 31%;
+  width: 40%;
 }
 
 .menu-button:hover {
@@ -518,8 +518,8 @@ h2 {
   background-color: transparent;
   z-index: -1;
 
-  right: 22%;
-  width: 60%;
+  right: 34%;
+  width: 40%;
   animation: menu-background 8s infinite linear;
   animation-delay: 0.3s;
 }
