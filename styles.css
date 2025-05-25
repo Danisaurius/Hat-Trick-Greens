@@ -487,42 +487,129 @@ h2 {
   height: auto;
 }
 
-.menu{
+.menu {
   margin-top: 100px;
   transform: translateY(70px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  min-width: 350px;
+  height: 630px;
+  background-color: transparent;
+  /* border: 1px solid blue; */
 }
 
 .menu h2{
   background-color: transparent;
-  transform: translateY(-40px)
+  transform: translateY(-80px);
+  background-color: transparent;
 }
 
 .menu-button {
   position: absolute;
+  object-fit: contain;
+  display: block;
+  width: 100%;
   background-color: transparent;
-  right: 31%;
-  width: 40%;
+  transition: transform 0.3s ease;
+  z-index: 1;
+  /* border: 1px solid red; */
 }
 
-.menu-button:hover {
+.menu:has(.menu-clickable:hover) .menu-button {
   transform: translateY(-7px);
+  background-color: transparent;
 }
-.menu-button {
-  transition: transform 0.3s ease;
+
+.menu-clickable {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  left:25%;
+  top: 17%;
+  background-color: #3c5034;
+  z-index: 4;
+  opacity: 0;
+  background-color: transparent;
 }
 
 .menu-button-background {
   position: absolute;
-
+  display: block;
   background-color: transparent;
-  z-index: -1;
-
-  right: 34%;
-  width: 40%;
+  z-index: 0;
+  width: 100%;
   animation: menu-background 8s infinite linear;
   animation-delay: 0.3s;
 }
+
+.contact-us-wrapper {
+  /* border: 1px solid red; */
+  width: 100vw;
+  height:350px;
+  background-image: url(Assets/Images/FooterLeafBackground.jpg);
+  background-color: transparent;
+  background-size: cover;
+  opacity: 1;
+  z-index: 0;
+  box-shadow: 0px -11px 20px rgba(0, 0, 0, 0.6);
+  display: flex;
+}
+
+.contact-us-box {
+  background-color: rgba(0, 0, 0, 0.45);
+  margin: 20px auto 20px auto;
+  width: 60%;
+}
+
+
+.contact-us-box h2 {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+span {background-color: transparent;}
+
+
+@media (max-width: 1100px) {
+  .menu{ 
+    margin-bottom: -200px;
+  }
+}
+
+@media (max-width: 1100px){
+  .menu-clickable { 
+    height: 40%;
+    top: 5%;
+   
+  }
+}
+
+@media (max-width: 1200px){
+  .menu-clickable { 
+    height: 35%;
+    top: 8%;
+  }
+}
+
+@media (max-width: 900px){
+  .menu-clickable { 
+    height: 27%;
+    top: 5%;
+  }
+}
+
+
+@media (max-width: 700px){
+  .menu h2 { 
+    font-size: 1rem;
+  }
+}
+
 
 @keyframes menu-background {
     0% {
