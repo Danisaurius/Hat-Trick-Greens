@@ -550,7 +550,7 @@ h2 {
 .contact-us-wrapper {
   /* border: 1px solid red; */
   width: 100vw;
-  height:350px;
+  height:550px;
   background-image: url(Assets/Images/FooterLeafBackground.jpg);
   background-color: transparent;
   background-size: cover;
@@ -558,21 +558,164 @@ h2 {
   z-index: 0;
   box-shadow: 0px -11px 20px rgba(0, 0, 0, 0.6);
   display: flex;
+  flex-direction: row;
 }
 
 .contact-us-box {
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(0, 0, 0, 0.6);
   margin: 20px auto 20px auto;
-  width: 60%;
+  width: 45%;
+  display: flex;
+  flex-direction: row;
 }
 
 
 .contact-us-box h2 {
   color: white;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: transparent;
 }
 
 span {background-color: transparent;}
+
+.contact-form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  height: 70%;
+  padding: 20px;
+  z-index: 4;
+  background-color: transparent;
+}
+
+label {
+  font-family: 'montserrat', sans-serif;
+  color: white;
+  background-color: transparent;
+  width: 80%;
+  margin-bottom: 10px;
+  z-index: 5;
+}
+
+input {
+  font-family: 'montserrat', sans-serif;
+  color: #3c5034;
+  background-color: white;
+  width: 80%;
+  margin-bottom: 10px;
+  z-index: 5;
+}
+
+textarea {
+  font-family: 'montserrat', sans-serif;
+  color: #3c5034;
+  background-color: white;
+  width: 80%;
+  height: 100px;
+  margin-bottom: 0;
+  z-index: 5;
+}
+
+#send-button {
+  font-family: 'montserrat', sans-serif;
+  color: #3c5034;
+  width: 35%;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#send-button:hover {
+  background-color: #547247;
+  color: white;
+}
+
+.contact-us-divider{
+  width: 3px;
+  height: 300px;
+  background-color: white;
+  border-radius: 2px;
+  margin: auto;
+  }
+
+.social-media-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 100%;
+  margin: auto;
+  background-color: transparent;
+}
+
+.social-media-icon {
+  width: 50%; 
+  height: auto;
+  margin: 25px auto;
+  display: block;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.social-media-icons a {
+  margin: 5px auto;
+  text-align: center;
+  background-color: transparent;
+  z-index: 6;
+}
+
+
+@media (max-width: 700px) {
+  
+    .contact-us-wrapper{
+    height: 500px;
+  }
+
+  .contact-us-box{
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .contact-us-box h2{
+   font-size: 1.25rem;
+  }
+
+  .contact-us-divider {
+    height: 3px;
+    width: 70%;
+    margin: auto;
+  }
+
+  .social-media-icons {
+    flex-direction: row;
+    height: 10%;
+    
+  }
+
+  .social-media-icons a {
+    margin: 0 10px;
+  }
+
+  .social-media-icon {
+    width: 45px;
+    height: auto;
+  }
+  
+  #send-button {
+    font-size: 0.7rem;
+    padding: 5px;
+  }
+}
+
+
+
+
+
+
 
 
 @media (max-width: 1100px) {

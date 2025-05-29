@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Hat Trick Greens</title>
+    <link rel="icon" type="image/png" href="Assets/Images/hat-icon.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -153,8 +154,33 @@
 <footer>
     <div class="contact-us-wrapper" id="contact-us">
         <div class="contact-us-box">
-            <h2 class="contact-us"><span class="bold">Contact us!</span></h2>
+                <form action="" class="contact-form">
+                <h2 class="contact-us"><span class="bold">Contact us!</span></h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" id="send-button">Send</button>
+            </form>
+            <div class="contact-us-divider"></div>
+            <div class="social-media-icons">
+                <a href="#" onclick="alert('Coming soon!'); return false;">
+                    <img src="Assets/Images/icon-instagram.png" alt="instagram icon" class="social-media-icon">
+                </a>
+                <a href="#" onclick="alert('Coming soon!'); return false;">
+                    <img src="Assets/Images/icons-youtube.png" alt="youtube icon" class="social-media-icon">
+                </a>
+                <a href="#" onclick="alert('Coming soon!'); return false;">
+                    <img src="Assets/Images/icons-github.png" alt="github icon" class="social-media-icon">
+                </a>
+            </div>
         </div>
+        
     </div>
 </footer>
 
