@@ -21,7 +21,9 @@ elementsToObserve.forEach(el => {
 });
 
 
-// const image = document.querySelector('.about-us-image', '.about-us-image-container p');
-// if (image) {
-//   observer.observe(image);
-// }
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("Thank you! Your message has been sent.");
+  });
+});
