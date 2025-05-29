@@ -24,6 +24,6 @@ elementsToObserve.forEach(el => {
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("contact-form").addEventListener("submit", function(event) {
     event.preventDefault();
-    alert("Thank you! Your message has been sent.");
+    alert("This feature is not implemented yet. Stay tuned!");
   });
 });
