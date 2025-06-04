@@ -3,27 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hat Trick Greens Menu</title>
     <link rel="stylesheet" href="menustyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
     <div class="header">
         <div class="logo-container">
-        <video autoplay loop muted playsinline class="video-logo">
-    <source src="Assets/Videos/AnimatedLogo.mp4" type="video/mp4" >
-        </video>
+            <video autoplay loop muted playsinline class="video-logo">
+                <source src="Assets/Videos/AnimatedLogo.mp4" type="video/mp4" >
+            </video>
         </div>
         <div class="navbar">
                 <ul>
                     <li class="nav-button"><a href="index.html">Home<img src="Assets/Images/NavButtonOrnament1.png" alt="Nav button ornament" class="nav-bar-image1"></a></li>
-                    <li class="nav-button"><a href="index.html#divider3">Restaurant<img src="Assets/Images/NavButtonOrnament1.png" alt="Nav button ornament" class="nav-bar-image2"></a></li>
-                    <li class="nav-button"><a href="index.html#menu">Menu<img src="Assets/Images/NavButtonOrnament1.png" alt="Nav button ornament" class="nav-bar-image1"></a></li>
-                    <li class="nav-button"><a href="index.html#contact-us">Contact<img src="Assets/Images/NavButtonOrnament1.png" alt="Nav button ornament" class="nav-bar-image2"></a></li>
+                    <li class="nav-button"><a href="index.html#divider3">Main Dishes<img src="Assets/Images/NavButtonOrnament1.png" alt="Nav button ornament" class="nav-bar-image2"></a></li>
+                    <li class="nav-button"><a href="index.html#menu">Drinks<img src="Assets/Images/NavButtonOrnament1.png" alt="Nav button ornament" class="nav-bar-image1"></a></li>
+                    <li class="nav-button"><a href="index.html#contact-us">Desserts<img src="Assets/Images/NavButtonOrnament1.png" alt="Nav button ornament" class="nav-bar-image2"></a></li>
                 </ul>
-                
         </div>
     </div>
+
+    <div class="divider">
+            <img class="divider-image" src="Assets/Images/OrnamentSeparator.png" alt="divider">
+    </div>
+
+    <div class="welcome-to-our-menu-wrapper">
+        <h1>Welcome to our Menu!</h1>
+        <div class="menu-introduction-paragraph">
+        <p>This is <span class="italic">Hat Trick Greens</span>, your go-to destination for bold, vibrant vegetarian dining that hits all the right notes. Whether you're a seasoned herbivore or just curious about plant-based plates, our menu is crafted to surprise, delight, and nourish — no meat, no compromise.</p>
+
+        <p>Whether you're a lifelong vegetarian, exploring plant-based eating for the first time, or just in the mood for something new and exciting, Hat Trick Greens has something special for you. Our dishes are thoughtfully curated to balance nutrition and flavor, blending classic comfort with global inspiration. From hearty mains to refreshing drinks and decadent desserts, we offer something for every appetite.</p>
+        </div>
+    </div>
+
+    <div class="divider">
+            <img class="divider-image-flipped" src="Assets/Images/OrnamentSeparator.png" alt="divider">
+    </div>
+
+
+    <div class="main-dishes-container">
+        <h2 class="main-dishes-title"></h2>
+    </div>
+
+
+
+    <div class="drinks-container"></div>
+    <div class="desserts-container"></div>
     </header>
 </body>
+
+<footer>
+    <div class="contact-us-wrapper" id="contact-us">
+        <div class="contact-us-box">
+            
+            <form action="" class="contact-form" id="contact-form">
+                <h2 class="contact-us"><span class="bold">Contact us!</span></h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" id="send-button">Send</button>
+
+                
+
+            </form>
+            <div class="contact-us-divider"></div>
+            <div class="social-media-icons">
+                <a href="#" onclick="alert('Coming soon!'); return false;">
+                    <img src="Assets/Images/icon-instagram.png" alt="instagram icon" class="social-media-icon">
+                </a>
+                <a href="#" onclick="alert('Coming soon!'); return false;">
+                    <img src="Assets/Images/icons-youtube.png" alt="youtube icon" class="social-media-icon">
+                </a>
+                <a href="#header" onclick="alert('Coming soon!'); return false;">
+                    <img src="Assets/Images/icons-github.png" alt="github icon" class="social-media-icon">
+                </a>
+            
+            </div>
+
+            <a href="#"><div class="home-button-bottom">Top</div></a>
+            
+        </div>
+        <p class="copyright-p">All rights resereved © Hat Trick Greens 2025.</p>
+        
+    </div>
+</footer>
+
 </html>
