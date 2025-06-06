@@ -435,7 +435,7 @@ h1 {
 }
 
 .dessert {
-    background-color: #ffd9ff;
+    background-color: #99f3fa;
     border-radius: 5%;
     border: 3px solid white;
     padding: 20px;
@@ -450,7 +450,7 @@ h1 {
         }
 
         .dessert:hover {
-          background-color: #fdcef3;
+          background-color: #baebff;
         }
 
         .dessert:active {
