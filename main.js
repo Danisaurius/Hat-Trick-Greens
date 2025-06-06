@@ -27,3 +27,34 @@ document.addEventListener("DOMContentLoaded", function () {
     alert("This feature is not implemented yet. Stay tuned!");
   });
 });
+
+
+// modal added code:
+
+    const modal = document.getElementById('cardModal');
+    const modalContent = document.getElementById('modalCardContent');
+    const closeBtn = document.querySelector('.modal .close');
+    const cards = document.querySelectorAll('.main-dishes-grid-container .card, .drink-grid-container .card, .dessert-grid-container .card');
+
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      const clonedCard = card.cloneNode(true);
+      modalContent.innerHTML = ''; // Clear old content
+      modalContent.appendChild(clonedCard);
+      modal.style.display = 'block';
+    });
+  });
+
+  closeBtn.onclick = () => {
+    modal.style.display = 'none';
+  };
+
+  window.onclick = (event) => {
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+  };
+
+// end of modal added code
+
+
